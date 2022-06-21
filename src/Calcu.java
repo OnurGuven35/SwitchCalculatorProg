@@ -23,23 +23,23 @@ public class Calcu {
 
         switch (select) {
             case 1:
-                System.out.print("\nToplama Isleminizin Sonucu : " + (n1 + n2));
+                System.out.println("\nToplama Isleminizin Sonucu : " + (n1 + n2));
                 break;
             case 2:
-                System.out.print("\nCikarma Isleminizin Sonucu : " + (n1 - n2));
+                System.out.println("\nCikarma Isleminizin Sonucu : " + (n1 - n2));
                 break;
             case 3:
-                System.out.print("\nCarpma Isleminizin Sonucu : " + (n1 * n2));
+                System.out.println("\nCarpma Isleminizin Sonucu : " + (n1 * n2));
                 break;
             case 4:
                 if (n2 != 0) {
-                    System.out.print("\nBolme Isleminizin Sonucu : " + (n1 / n2));
+                    System.out.println("\nBolme Isleminizin Sonucu : " + (n1 / n2));
                 } else {
-                    System.out.print("\nBir Sayi Sifira Bolunemez ! ");
+                    System.out.println("\nBir Sayi Sifira Bolunemez ! ");
                 }
                 break;
             default:
-                System.out.print("\nLutfen 1 ila 4 Arasında Bir Sayi Giriniz ! ");
+                System.out.println("\nLutfen 1 ila 4 Arasinda Bir Sayi Seciniz ! ");
         }
     }
 }
