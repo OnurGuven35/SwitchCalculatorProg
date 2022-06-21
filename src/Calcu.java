@@ -1,39 +1,45 @@
+// // Javada switch case ile basit hesap makinesi yapınız.
+
 import java.util.Scanner;
 
 public class Calcu {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int s1, s2;
-        int secim;
+        int n1, n2;
+        int select;
 
+        // İlk olarak kullanıcıdan girişleri alıyoruz ve formüllere göre çıkan sonucu ekrana yazdırıyoruz.
+
+
+        System.out.println();
         System.out.print("Ilk Sayiyi Giriniz : ");
-        s1 = input.nextInt();
+        n1 = input.nextInt();
         System.out.print("Ikinci Sayiyi Giriniz : ");
-        s2 = input.nextInt();
-        System.out.println("1-Toplama \n2-Cikarma \n3-Carpma \n4-Bolme ");
-        System.out.print("Lutfen Seciminizi Yapiniz : ");
-        secim = input.nextInt();
+        n2 = input.nextInt();
+        System.out.println("\n1-Toplama \n2-Cikarma \n3-Carpma \n4-Bolme ");
+        System.out.print("\nLutfen Seciminizi Yapiniz : ");
+        select = input.nextInt();
 
-        switch (secim) {
+        switch (select) {
             case 1:
-                System.out.print("Toplama Isleminizin Sonucu : " + (s1 + s2));
+                System.out.print("\nToplama Isleminizin Sonucu : " + (n1 + n2));
                 break;
             case 2:
-                System.out.print("Cikarma Isleminizin Sonucu : " + (s1 - s2));
+                System.out.print("\nCikarma Isleminizin Sonucu : " + (n1 - n2));
                 break;
             case 3:
-                System.out.print("Carpma Isleminizin Sonucu : " + (s1 * s2));
+                System.out.print("\nCarpma Isleminizin Sonucu : " + (n1 * n2));
                 break;
             case 4:
-                if (s2 != 0) {
-                    System.out.print("Bolme Isleminizin Sonucu : " + (s1 / s2));
+                if (n2 != 0) {
+                    System.out.print("\nBolme Isleminizin Sonucu : " + (n1 / n2));
                 } else {
-                    System.out.print("Bir Sayi Sifira Bolunemez ! ");
+                    System.out.print("\nBir Sayi Sifira Bolunemez ! ");
                 }
                 break;
             default:
-                System.out.print("Lutfen 1 ila 4 Arasında Bir Sayi Giriniz ! ");
+                System.out.print("\nLutfen 1 ila 4 Arasında Bir Sayi Giriniz ! ");
         }
     }
 }
