@@ -1,4 +1,4 @@
-// // Javada switch case ile basit hesap makinesi yapınız.
+// Javada switch case ile basit hesap makinesi yapınız.
 
 import java.util.Scanner;
 
