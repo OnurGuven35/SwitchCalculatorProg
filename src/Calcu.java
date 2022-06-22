@@ -22,17 +22,17 @@ public class Calcu {
 
         switch (select) {
             case 1:
-                System.out.println("\nToplama Isleminizin Sonucu : " + (n1 + n2));
+                System.out.println("\nToplama Isleminin Sonucu : " + (n1 + n2));
                 break;
             case 2:
-                System.out.println("\nCikarma Isleminizin Sonucu : " + (n1 - n2));
+                System.out.println("\nCikarma Isleminin Sonucu : " + (n1 - n2));
                 break;
             case 3:
-                System.out.println("\nCarpma Isleminizin Sonucu : " + (n1 * n2));
+                System.out.println("\nCarpma Isleminin Sonucu : " + (n1 * n2));
                 break;
             case 4:
                 if (n2 != 0) {
-                    System.out.println("\nBolme Isleminizin Sonucu : " + (n1 / n2));
+                    System.out.println("\nBolme Isleminin Sonucu : " + (n1 / n2));
                 } else {
                     System.out.println("\nBir Sayi Sifira Bolunemez ! ");
                 }
